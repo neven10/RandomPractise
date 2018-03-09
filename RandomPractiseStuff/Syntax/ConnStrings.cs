@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RandomPractiseStuff.Random
+namespace RandomPractiseStuff
 {
     class ConnStrings
     {
@@ -12,10 +12,10 @@ namespace RandomPractiseStuff.Random
         void Builder()
         {
             //connStringBuilder = new MySqlConnectionStringBuilder();
-            //connStringBuilder.Server = "localhost";
-            //connStringBuilder.UserID = "root";
-            //connStringBuilder.Password = "warblade@369";
-            //connStringBuilder.Database = combo_baza_godina.Text;
+            //connStringBuilder.Server = "";
+            //connStringBuilder.UserID = "";
+            //connStringBuilder.Password = "";
+            //connStringBuilder.Database = "";
             //conn = new MySqlConnection(connStringBuilder.ToString());
         }
     }

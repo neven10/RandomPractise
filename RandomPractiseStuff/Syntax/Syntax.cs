@@ -30,7 +30,6 @@ namespace RandomPractiseStuff.Syntax
 
         }
 
-
         void NullCoalesce()
         {
             string mystring = null;
