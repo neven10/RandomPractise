@@ -10,7 +10,17 @@ namespace RandomPractiseStuff
     {
         static void Main(string[] args)
         {
-            Singleton.Instance.Msg("!");
+            //  Singleton.Instance.Msg("!");
+
+            FakturaRecepti fakturaRecepti = new FakturaRecepti();
+            UslugaIzdavanjaDecorator uslugaIzdavanja = new UslugaIzdavanjaDecorator(fakturaRecepti);
+            UslugaRastvaranjaDecorator uslugaRastvaranja = new UslugaRastvaranjaDecorator(uslugaIzdavanja);
+
+
+
+
+            Console.WriteLine(uslugaRastvaranja.IznosFakture());
+            Console.ReadLine();
         }
     }
 }

@@ -14,12 +14,6 @@ namespace RandomPractiseStuff
         private static object syncLock = new object();
 
 
-
-        public Singleton()
-        {
-
-        }
-
         public static Singleton Instance
         {
             get
