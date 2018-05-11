@@ -18,21 +18,20 @@ namespace RandomPractiseStuff
         {
             get
             {
-                if (_instance != null)
+                if (_instance == null)
                 {
-                    return _instance;
-                }
-
-                lock (syncLock)
-                {
-                    if (_instance == null)
+                    lock (syncLock)
                     {
-                        _instance = new Singleton();
+                        if (_instance == null)
+                        {
+                            _instance = new Singleton();
+                        }
                     }
                 }
                 return _instance;
             }
         }
+        
         public void Msg(string poruka)
         {
             Console.WriteLine(poruka);
