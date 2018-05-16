@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseString", "ReverseStr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayDuplicate", "ArrayDuplicate\ArrayDuplicate.csproj", "{917F6A6D-D37B-417C-9BF0-62FAE8FDE137}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anagram", "Anagram\Anagram.csproj", "{03804869-92AF-4D27-B273-C5E05BED9060}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{917F6A6D-D37B-417C-9BF0-62FAE8FDE137}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{917F6A6D-D37B-417C-9BF0-62FAE8FDE137}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{917F6A6D-D37B-417C-9BF0-62FAE8FDE137}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03804869-92AF-4D27-B273-C5E05BED9060}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03804869-92AF-4D27-B273-C5E05BED9060}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03804869-92AF-4D27-B273-C5E05BED9060}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03804869-92AF-4D27-B273-C5E05BED9060}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
