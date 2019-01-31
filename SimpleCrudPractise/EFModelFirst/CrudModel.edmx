@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="CrudModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="CrudModelStoreContainer">
+    <EntitySet Name="radniks" EntityType="CrudModel.Store.radniks" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sektors" EntityType="CrudModel.Store.sektors" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="radniksektor" Association="CrudModel.Store.radniksektor">
+      <End Role="radnik" EntitySet="radniks" />
+      <End Role="sektor" EntitySet="sektors" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="radniks">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ime" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="prezime" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="maticni" Type="int" Nullable="false" />
+    <Property Name="sektorId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sektors">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="naziv" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <Association Name="radniksektor">
+    <End Role="radnik" Type="CrudModel.Store.radniks" Multiplicity="*" />
+    <End Role="sektor" Type="CrudModel.Store.sektors" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="sektor">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="radnik">
+        <PropertyRef Name="sektorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="CrudModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="CrudModelContainer" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="radniks" EntityType="CrudModel.radnik" />
+          <EntitySet Name="sektors" EntityType="CrudModel.sektor" />
+          <AssociationSet Name="radniksektor" Association="CrudModel.radniksektor">
+            <End Role="radnik" EntitySet="radniks" />
+            <End Role="sektor" EntitySet="sektors" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="radnik">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ime" Type="String" Nullable="false" />
+          <Property Name="prezime" Type="String" Nullable="false" />
+          <Property Name="maticni" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="sektor" Relationship="CrudModel.radniksektor" FromRole="radnik" ToRole="sektor" />
+          <Property Name="sektorId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="sektor">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="naziv" Type="String" Nullable="false" />
+          <NavigationProperty Name="radniks" Relationship="CrudModel.radniksektor" FromRole="sektor" ToRole="radnik" />
+        </EntityType>
+        <Association Name="radniksektor">
+          <End Type="CrudModel.radnik" Role="radnik" Multiplicity="*" />
+          <End Type="CrudModel.sektor" Role="sektor" Multiplicity="1" />
+          <ReferentialConstraint>
+            <Principal Role="sektor">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="radnik">
+              <PropertyRef Name="sektorId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CrudModelStoreContainer" CdmEntityContainer="CrudModelContainer">
+    <EntitySetMapping Name="radniks">
+      <EntityTypeMapping TypeName="IsTypeOf(CrudModel.radnik)">
+        <MappingFragment StoreEntitySet="radniks">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ime" ColumnName="ime" />
+          <ScalarProperty Name="prezime" ColumnName="prezime" />
+          <ScalarProperty Name="maticni" ColumnName="maticni" />
+          <ScalarProperty Name="sektorId" ColumnName="sektorId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sektors">
+      <EntityTypeMapping TypeName="IsTypeOf(CrudModel.sektor)">
+        <MappingFragment StoreEntitySet="sektors">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="naziv" ColumnName="naziv" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

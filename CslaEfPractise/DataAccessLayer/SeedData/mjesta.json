@@ -1,0 +1,321 @@
+[ 
+{ 
+"ID":1,
+"mjesta_grad":"BIJELJINA  76300"
+},
+{ 
+"ID":2,
+"mjesta_grad":"ŠAMAC 76230"
+},
+{ 
+"ID":3,
+"mjesta_grad":"MODRIČA   74480"
+},
+{ 
+"ID":4,
+"mjesta_grad":"DIJELOVI-DVOROVI"
+},
+{ 
+"ID":5,
+"mjesta_grad":"TREBINJE 89101"
+},
+{ 
+"ID":6,
+"mjesta_grad":"JANJA"
+},
+{ 
+"ID":7,
+"mjesta_grad":"DVOROVI"
+},
+{ 
+"ID":8,
+"mjesta_grad":"ISTOČNO SARAJEVO  71123"
+},
+{ 
+"ID":9,
+"mjesta_grad":"FOČA  73300"
+},
+{ 
+"ID":10,
+"mjesta_grad":"DONJI ŽABAR  76273"
+},
+{ 
+"ID":11,
+"mjesta_grad":"BOSANSKI BROD  74450"
+},
+{ 
+"ID":12,
+"mjesta_grad":"BRATUNAC  75420"
+},
+{ 
+"ID":13,
+"mjesta_grad":"BRODAC 76313"
+},
+{ 
+"ID":14,
+"mjesta_grad":"PRNJAVOR 78430"
+},
+{ 
+"ID":15,
+"mjesta_grad":"PRIJEDOR 79101"
+},
+{ 
+"ID":16,
+"mjesta_grad":"ŠIBOVSKA 78433"
+},
+{ 
+"ID":17,
+"mjesta_grad":"MRKONJIĆ GRAD 70260"
+},
+{ 
+"ID":18,
+"mjesta_grad":"BANJA LUKA 78000"
+},
+{ 
+"ID":19,
+"mjesta_grad":"BILEĆA 89230"
+},
+{ 
+"ID":20,
+"mjesta_grad":"ZVORNIK 75400"
+},
+{ 
+"ID":21,
+"mjesta_grad":"BRČKO 76100"
+},
+{ 
+"ID":22,
+"mjesta_grad":"ODŽAK 76920"
+},
+{ 
+"ID":23,
+"mjesta_grad":"SARAJEVO 71000"
+},
+{ 
+"ID":24,
+"mjesta_grad":"NEVESINJE 88280"
+},
+{ 
+"ID":25,
+"mjesta_grad":"BIJELJINA 76311"
+},
+{ 
+"ID":26,
+"mjesta_grad":"DERVENTA 74400"
+},
+{ 
+"ID":27,
+"mjesta_grad":"DOBOJ 74101"
+},
+{ 
+"ID":28,
+"mjesta_grad":"GACKO 89240"
+},
+{ 
+"ID":29,
+"mjesta_grad":"GRADIŠKA 78400"
+},
+{ 
+"ID":30,
+"mjesta_grad":"HAN PIJESAK 71360"
+},
+{ 
+"ID":31,
+"mjesta_grad":"KOZARSKA DUBICA 79240"
+},
+{ 
+"ID":32,
+"mjesta_grad":"LAKTASI 78250"
+},
+{ 
+"ID":33,
+"mjesta_grad":"LOPARE 75240"
+},
+{ 
+"ID":34,
+"mjesta_grad":"MILICI 75446"
+},
+{ 
+"ID":35,
+"mjesta_grad":"PALE 71420"
+},
+{ 
+"ID":36,
+"mjesta_grad":"SIPOVO 70270"
+},
+{ 
+"ID":37,
+"mjesta_grad":"SOKOLAC 71350"
+},
+{ 
+"ID":38,
+"mjesta_grad":"SRBAC 78420"
+},
+{ 
+"ID":39,
+"mjesta_grad":"UGLJEVIK 76330"
+},
+{ 
+"ID":40,
+"mjesta_grad":"BROD 74450"
+},
+{ 
+"ID":41,
+"mjesta_grad":"ROGATICA 73220"
+},
+{ 
+"ID":42,
+"mjesta_grad":"ŠAMAC 76230"
+},
+{ 
+"ID":43,
+"mjesta_grad":"OBUDOVAC 76235"
+},
+{ 
+"ID":44,
+"mjesta_grad":"TESLIĆ 74270"
+},
+{ 
+"ID":45,
+"mjesta_grad":"ČELINAC 78240"
+},
+{ 
+"ID":46,
+"mjesta_grad":"VLASENICA 75440"
+},
+{ 
+"ID":47,
+"mjesta_grad":"TUZLA 75000"
+},
+{ 
+"ID":48,
+"mjesta_grad":"GORAŽDE 73000"
+},
+{ 
+"ID":49,
+"mjesta_grad":"TEŠANJ 74260"
+},
+{ 
+"ID":50,
+"mjesta_grad":"ŽIVINICE 75270"
+},
+{ 
+"ID":51,
+"mjesta_grad":"GRADAČAC 76250"
+},
+{ 
+"ID":52,
+"mjesta_grad":"BIHAĆ 77000"
+},
+{ 
+"ID":53,
+"mjesta_grad":"VELIKA KLADUŠA 77230"
+},
+{ 
+"ID":54,
+"mjesta_grad":"SAPNA 75411"
+},
+{ 
+"ID":55,
+"mjesta_grad":"BOSANSKI PETROVAC 77250"
+},
+{ 
+"ID":56,
+"mjesta_grad":"LIVNO 80101"
+},
+{ 
+"ID":57,
+"mjesta_grad":"MOSTAR 88000"
+},
+{ 
+"ID":58,
+"mjesta_grad":"GORNJI VAKUF 70240"
+},
+{ 
+"ID":59,
+"mjesta_grad":"ŠIROKI BRIJEG 88220"
+},
+{ 
+"ID":60,
+"mjesta_grad":"POSUŠJE 88240"
+},
+{ 
+"ID":61,
+"mjesta_grad":"GRUDE 88340"
+},
+{ 
+"ID":62,
+"mjesta_grad":"VITEZ 72250"
+},
+{ 
+"ID":63,
+"mjesta_grad":"BUSOVACA 72260"
+},
+{ 
+"ID":64,
+"mjesta_grad":"LJUBUŠKI 88320"
+},
+{ 
+"ID":65,
+"mjesta_grad":"TOMISLAVGRAD 80240"
+},
+{ 
+"ID":66,
+"mjesta_grad":"MEÐUGORJE 88266"
+},
+{ 
+"ID":67,
+"mjesta_grad":"DRVAR 80260"
+},
+{ 
+"ID":68,
+"mjesta_grad":"KONJIC 88400"
+},
+{ 
+"ID":69,
+"mjesta_grad":"ILIDŽA 71210"
+},
+{ 
+"ID":70,
+"mjesta_grad":"TARČIN 71244"
+},
+{ 
+"ID":71,
+"mjesta_grad":"VISOKO 71300"
+},
+{ 
+"ID":72,
+"mjesta_grad":"KAKANJ 72240"
+},
+{ 
+"ID":73,
+"mjesta_grad":"ZENICA 72000"
+},
+{ 
+"ID":74,
+"mjesta_grad":"ILIJAŠ 71380"
+},
+{ 
+"ID":75,
+"mjesta_grad":"FOJNICA 71270"
+},
+{ 
+"ID":76,
+"mjesta_grad":"HADŽIĆI 71240"
+},
+{ 
+"ID":77,
+"mjesta_grad":"JABLANICA 88420"
+},
+{ 
+"ID":78,
+"mjesta_grad":"KISELJAK 71250"
+},
+{ 
+"ID":79,
+"mjesta_grad":"RIBNIK"
+},
+{ 
+"ID":80,
+"mjesta_grad":"JAJCE 70101"
+}]

@@ -1,0 +1,16 @@
+﻿@model DrinkListViewModel
+
+<div>
+    <h2>List of drinks</h2>
+</div>
+
+
+<div class="row marginTop">
+    @foreach (var drink in Model.Drinks)
+    {
+        @Html.Partial("DrinkSummary", drink)
+    }
+</div>
+
+
+
